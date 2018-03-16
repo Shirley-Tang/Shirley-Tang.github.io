@@ -13,15 +13,17 @@
 .header-background img {
     min-width: 100%;
     position: fixed;
+    height: 100vh;
 }
 .header-hello {
     position: absolute;
-    top: 10rem;
-    right: 10rem;
+    top: 20%;
+    right: 10%;
     color: #fff;
     width: 35rem;
     text-align: right;
 }
+
 .header-hello:after {
     content: " ";
     width: 100%;
@@ -31,10 +33,15 @@
     right: 0;
     bottom: -10px;
 }
+.header h1:hover {
+    transform: scale(1.1) translateX(-2rem);
+}
 .header h1 {
-    font-size: 3.2rem;
+    font-size: 3.4rem;
     margin-bottom: 1rem;
     font-weight: bold;
+    transition: all 1.5s;
+    cursor: pointer;
 }
 .header p {
     font-size: 1.6rem;
@@ -68,8 +75,19 @@
 }
 
 .introduce h2 {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
     text-align: center;
+    position: relative;
+}
+.introduce h2:after {
+    content: "";
+    position: absolute;
+    bottom: -.5rem;
+    right: 40%;
+    width: 20%;
+    height: 2px;
+    background: #000;
 }
 .introduce h4 {
     margin-top: 3rem;
@@ -102,17 +120,6 @@
     background-color: #fff;
 }
 
-/*打钩*/
-ul.checklist li:before {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    content: '\f00c';
-    margin-right: 0.75em;
-}
-
 ul.checklist {
     list-style: none;
     padding-left: 2rem;
@@ -122,4 +129,40 @@ ul.checklist li {
     text-decoration: none;
     margin-bottom: 1.5rem;
     padding-left: 0;
+}
+
+/*delighter插件*/
+.delighter.container {
+    transform:translate(-100%);
+    opacity:0;
+    transition: all 1s ease-out;
+}
+.delighter.container.started {
+    transform:none;
+    opacity:1;
+}
+
+.delighter.header-hello {
+    transform: translateY(100%);
+    opacity:0;
+    transition: all 2s ease-out;
+}
+.delighter.header-hello.started {
+    transform:none;
+    opacity:1;
+}
+
+/*大屏幕*/
+@media screen and (min-width: 1170px){
+    .header h1 {
+        font-size: 3.8rem;
+    }
+    .header p {
+        font-size: 2rem;
+    }
+    .header-hello {
+        position: absolute;
+        top: 25%;
+        right: 15%;
+    }
 }

@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <!-- 响应式 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>唐晓蕾的个人网页</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+
 </head>
 <body>
     <!-- Header -->
@@ -10,7 +13,7 @@
         <div class="header-background">
             <img src="./images/background3.png" alt="背景">
         </div>
-        <div class="header-hello">
+        <div data-delighter class="header-hello">
             <h1>Hello,I'm Shirley</h1>
             <p>我叫唐晓蕾</p>
             <p>一名正在努力的前端小白</p>
@@ -19,13 +22,13 @@
 
     <!-- One part-->
     <section id="one" class="wrapper">
-        <div class="container">
+        <div data-delighter class="container">
             <div class="box head">
                 <img src="./images/header.png" alt="头像">
             </div>
             <div class="box introduce">
                 <h2>关于我</h2>
-                <p>我叫唐晓蕾，24岁，坐标上海。我并不是计算机相关专业，但对前端很感兴趣，所以工作之余在网络上学习前端知识。兴趣爱好还有绘画，所以在大学期间辅修了艺术学位。</p>
+                <p>我叫唐晓蕾，24岁，居住上海。我并不是计算机相关专业，但对前端很感兴趣，所以工作之余在网络上学习前端知识。运用学到的知识，使用了GitHub pages搭建了这样一个网页；我的兴趣爱好还有绘画，在大学期间辅修了艺术学位，有时会临摹一些喜欢的作品。</p>
                 <h4>路漫漫其修远兮,吾将上下而求索。</h4>
             </div>
         </div>
@@ -43,5 +46,7 @@
             </ul>
         </div>
     </section>
+
+    <script type="text/javascript" src="./js/delighters.js"></script>
 </body>
 </html>
