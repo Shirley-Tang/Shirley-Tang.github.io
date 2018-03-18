@@ -4,7 +4,7 @@
     <!-- 响应式 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>唐晓蕾的个人网页</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 
 </head>
 <body>
@@ -13,10 +13,29 @@
         <div class="header-background">
             <img src="./images/background3.png" alt="背景">
         </div>
-        <div data-delighter class="header-hello">
+        <div id="nav" class="nav">
+            <ul class="clearfix nav-items">
+                <li>
+                    <a href="#">HOME</a>
+                </li>
+                <li>
+                    <a href="#one">ABOUT</a>
+                </li>
+                <li>
+                    <a href="#two">SKILL</a>
+                </li>
+                <li>
+                    <a href="#four">PAINT</a>
+                </li>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header-hello">
             <h1>Hello,I'm Shirley</h1>
             <p>我叫唐晓蕾</p>
-            <p>一名正在努力的前端小白</p>
+            <p>目标是成为一名前端工程师</p>
         </div>
     </section>
 
@@ -28,7 +47,8 @@
             </div>
             <div class="box introduce">
                 <h2>关于我</h2>
-                <p>我叫唐晓蕾，24岁，居住上海。我并不是计算机相关专业，但对前端很感兴趣，所以工作之余在网络上学习前端知识。运用学到的知识，使用了GitHub pages搭建了这样一个网页；我的兴趣爱好还有绘画，在大学期间辅修了艺术学位，有时会临摹一些喜欢的作品。</p>
+                <p>我叫唐晓蕾，24岁，居住上海。我并不是计算机相关专业，但对前端开发怀有热情和好奇心，所以工作之余在网络上学习前端知识，学习得越多，越觉得前端知识体系非常庞大，有很多东西需要不断学习，但我没有放弃，还是希望能够进入这一行业。</p>
+                <p>生活中我还有其他的兴趣爱好，比如绘画，在大学期间辅修了艺术学位，有时会临摹一些喜欢的作品。</p>
                 <h4>路漫漫其修远兮,吾将上下而求索。</h4>
             </div>
         </div>
@@ -36,17 +56,105 @@
 
     <!-- Two part-->
     <section id="two" class="wrapper">
-        <div class="box">
-            <ul class="checklist">
-                <li>掌握html，css，JavaScript基础知识。</li>
-                <li>熟悉jQuery框架，计划学习vue和react框架。</li>
-                <li>熟悉git版本管理工具</li>
-                <li>了解前端自动化构建工具webpack</li>
-                <li>掌握PS，PR等软件，有一定平面设计基础</li>
+        <div>
+            <h2>知识技能</h2>
+            <ul class="skill-list">
+                <li>
+                    <h3>HTML5</h3>
+                    <p>熟练HTML标记语言</p>
+                    <p>理解web标准和W3C规范</p>
+                    <p>能够根据设计图实现页面布局和交互效果</p>
+                </li>
+                <li>
+                    <h3>CSS3</h3>
+                    <p>了解css3新特性</p>
+                    <p>熟练使用DIV+CSS进行页面布局、响应式布局</p>
+                </li>
+                <li>
+                    <h3>JavaScript</h3>
+                    <p>掌握js基础，了解面向对象编程思想</p>
+                    <p>熟悉jQuery框架，计划学习vue及react框架</p>
+                </li>
+                <li>
+                    <h3>Webpack</h3>
+                    <p>了解webpack构建工具的使用</p>
+                    <p>了解webpack loader的使用，例如css-loader等</p>
+                    <p>了解webpack plugin的使用，例如UglifyJS等</p>
+                </li>
+                <li>
+                    <h3>Adobe软件</h3>
+                    <p>掌握Photoshop图像处理软件</p>
+                    <p>掌握premiere视频剪辑软件</p>
+                </li>
             </ul>
         </div>
     </section>
 
-    <script type="text/javascript" src="./js/delighters.js"></script>
+    <!-- three part-->
+
+    <!-- four part-->
+    <section id="four" class="wrapper">
+        <h2>个人画册</h2>
+        <div data-delighter class="box-wrapper">
+            <div class="box">
+                <img src="images/c1.png" alt="Q版白起"/>
+                <div class="box-content">
+                    <div class="box-inner-content">
+                        <h3 class="title">Q版白起-18/2/17</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/c4.png" alt="数码油画"/>
+                <div class="box-content">
+                    <div class="box-inner-content">
+                        <h3 class="title" style="color: #fff">数码油画-14/5/5</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/c2.png" alt="随笔"/>
+                <div class="box-content">
+                    <div class="box-inner-content">
+                        <h3 class="title">随笔-13/8/16</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/c5.png" alt="素描练习"/>
+                <div class="box-content">
+                    <div class="box-inner-content">
+                        <h3 class="title" style="color: #fff">素描练习-13/6/14</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/c3.png" alt="卡通人物"/>
+                <div class="box-content">
+                    <div class="box-inner-content">
+                        <h3 class="title">卡通人物-13/5/4</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script type="text/javascript" src="./js/delighters.js"></script> <!-- 动画 -->
+
+    <script>
+    window.onscroll=function(){
+        var topScroll =document.body.scrollTop;//滚动的距离,距离顶部的距离
+        var bignav  = document.getElementById("nav");//获取到导航栏id
+        if(topScroll > 500){  //当滚动距离大于250px时执行下面的东西
+            bignav.style.position = 'fixed';
+            bignav.style.zIndex = '9999';
+            bignav.style.background = 'rgba(0,0,0,.2)'
+        }else{//当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
+          bignav.style.position = 'absolute';
+          bignav.style.background = 'rgba(0,0,0,0)'
+        }
+    }
+    </script>
 </body>
 </html>

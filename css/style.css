@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft YaHei", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+/*清除浮动*/
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ".";
+}
+.clearfix{
+    zoom: 1;
+}
+/*header*/
+.header {
+    position: relative;
+}
+.header-background{
+    height: 100vh;
+}
+.header-background img {
+    min-width: 100%;
+    position: fixed;
+    height: 100vh;
+}
+.header-hello {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    color: #000;
+    width: 35rem;
+    text-align: right;
+    background: rgba(255,255,255,.4);
+    padding:1rem 2.5rem 1rem 0;
+    margin-top: 2rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.header p {
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+}
+.nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.4rem;
+}
+.nav ul{
+    margin: 2rem 3rem;
+    position: relative;
+}
+.nav ul:before{
+    content: " ";
+    position: absolute;
+    bottom: -1.2rem;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+.nav li{
+    float: left;
+    margin: 0 1rem;
+}
+.nav a{
+    color: #fff;
+}
+.nav a:hover{
+    color: #333;
+}
+
+/*one*/
+.wrapper {
+    padding: 10rem 2rem;
+    position: relative;
+}
+#one.wrapper {
+    background-color: rgba(255,238,200,.8);
+}
+#one .container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65rem;
+    max-width: 100%;
+    display: flex;
+}
+#one .box {
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.introduce {
+    flex: 2.5;
+    position: relative;
+    padding: 0 3.5rem;
+}
+
+.introduce h2 {
+    margin-bottom: 2.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+    position: relative;
+}
+.introduce h2:after {
+    content: "";
+    position: absolute;
+    bottom: -.5rem;
+    right: 40%;
+    width: 20%;
+    height: 2px;
+    background: #000;
+}
+.introduce h4 {
+    margin-top: 3rem;
+    text-align: right;
+    font-size: 1.2rem;
+}
+.introduce p {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+
+#one .box img {
+    width: 12rem;
+    border: 8px rgba(0,0,0,.3) solid;
+    transition: all .4s;
+    -moz-transition: all .4s; /* Firefox 4 */
+    -webkit-transition: all .4s; /* Safari 和 Chrome */
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+#one .box img:hover {
+    box-shadow: 0 0 10px #000;
+}
+.head {
+    width: 10rem;
+    flex: 1;
+}
+
+
+/*two*/
+#two.wrapper{
+    background-color: #3D1000;
+    color: #fff;
+}
+
+#two h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.skill-list {
+    list-style: none;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.skill-list li {
+    text-decoration: none;
+    width: 12rem;
+    margin: .8rem;
+    padding: .8rem;
+    border: 1px #fff solid;
+    border-radius: 20px;
+}
+
+.skill-list h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.skill-list p {
+    font-size: 1rem;
+    line-height: 2rem;
+}
+
+/*delighter插件*/
+.delighter.container {
+    transform:translate(-100%);
+    opacity:0;
+    transition: all 1s ease-out;
+}
+.delighter.container.started {
+    transform:none;
+    opacity:1;
+}
+
+.delighter.box-wrapper {
+    transform: translate(-100%);
+    opacity:0;
+    transition: all 1s ease-out;
+}
+.delighter.box-wrapper.started {
+    transform:none;
+    opacity:1;
+}
+
+
+/*four*/
+#four.wrapper{
+    background-color: rgba(255,255,255,.7);
+}
+#four .box-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#four h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.2rem;
+}
+#four .box{
+    overflow: hidden;
+    position: relative;
+    width: 20rem;
+    height: 15rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+#four .box:after{
+    content: "";
+    display: block;
+    border: 10px solid #333;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    bottom: 25px;
+    right: 25px;
+    opacity: 1;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+#four .box:hover:after{
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+}
+#four .box:before{
+    content: "";
+    display: block;
+    border: 20px solid rgba(0,0,0,.3);
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    bottom: 5px;
+    right: 5px;
+    opacity: 1;
+    z-index: 2;
+    transition: all 1s ease 0s;
+}
+#four .box:hover:before{
+    border: 1px solid rgba(0,0,0,.18);
+}
+
+#four .box img{
+    width: 100%;
+    height: auto;
+    transform: scale(1.1);
+    transform: all 1s ease 0s;
+}
+#four .box:hover img{
+    transform: scale(1);
+}
+#four .box-content{
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    bottom: 45px;
+    right: 45px;
+    opacity: 1;
+    z-index: 2;
+    transition: all 0.3s ease 0s;
+}
+#four .box:hover .box-content{
+    top: 6px;
+    left: 6px;
+    bottom: 6px;
+    right: 6px;
+}
+#four .box .box-inner-content{
+    width: 100%;
+    padding-bottom: 20px;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease 0s;
+}
+#four .box:hover .box-inner-content{
+    opacity: 1;
+}
+#four .box .title{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0;
+}
+/*大屏幕*/
+@media screen and (min-width: 1170px){
+    .header h1 {
+        font-size: 3.8rem;
+    }
+    .header p {
+        font-size: 2rem;
+    }
+    .header-hello {
+        position: absolute;
+        top: 40%;
+        padding:1.5rem 3rem 1.5rem 8rem;
+    }
+    .nav ul{
+        font-size: 1.5rem;
+        position: relative;
+    }
+    #two h2 {
+        font-size: 2.2rem;
+        margin-bottom: 4rem;
+    }
+    .skill-list h3 {
+        font-size: 1.5rem;
+    }
+
+    .skill-list p {
+        font-size: 1.2rem;
+    }
+
+    .skill-list li {
+        margin: 1.2rem;
+    }
+    #four .box{
+        width: 25rem;
+        height: 18rem;
+        margin: 2rem;
+    }
+    .nav li{
+        margin: 0 2rem;
+    }
+}
