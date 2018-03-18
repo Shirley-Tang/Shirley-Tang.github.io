@@ -30,14 +30,14 @@
 }
 .header-hello {
     position: absolute;
-    top: 40%;
-    left: 0;
-    color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
     width: 35rem;
-    text-align: right;
-    background: rgba(255,255,255,.4);
-    padding:1rem 2.5rem 1rem 0;
-    margin-top: 2rem;
+    text-align: center;
+    background: rgba(52,27,43,.5);
+    padding:1rem 2.5rem;
 }
 
 .header h1 {
@@ -47,7 +47,7 @@
 }
 .header p {
     font-size: 1.6rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
 }
 .nav {
     position: absolute;
@@ -85,7 +85,7 @@
     position: relative;
 }
 #one.wrapper {
-    background-color: rgba(255,238,200,.8);
+    background-color: rgba(255,255,255,.8);
 }
 #one .container {
     margin-left: auto;
@@ -132,7 +132,7 @@
 
 #one .box img {
     width: 12rem;
-    border: 8px rgba(0,0,0,.3) solid;
+    border: 8px rgba(52,27,43,.4) solid;
     transition: all .4s;
     -moz-transition: all .4s; /* Firefox 4 */
     -webkit-transition: all .4s; /* Safari 和 Chrome */
@@ -150,7 +150,7 @@
 
 /*two*/
 #two.wrapper{
-    background-color: #3D1000;
+    background-color: rgba(52,27,43,.6);
     color: #fff;
 }
 
@@ -221,6 +221,7 @@
     text-align: center;
     margin-bottom: 3rem;
     font-size: 2.2rem;
+    color: rgb(52,27,43);
 }
 #four .box{
     overflow: hidden;
@@ -319,11 +320,10 @@
     }
     .header p {
         font-size: 2rem;
+        line-height: 4rem;
     }
     .header-hello {
-        position: absolute;
-        top: 40%;
-        padding:1.5rem 3rem 1.5rem 8rem;
+        padding: 2rem 6rem;
     }
     .nav ul{
         font-size: 1.5rem;
