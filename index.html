@@ -12,25 +12,25 @@
     <section class="header">
         <div class="header-background">
             <img src="./images/banner.jpg" alt="背景">
-        </div>
-        <div id="nav" class="nav">
+            <div id="nav" class="nav">
             <ul class="clearfix nav-items">
                 <li>
                     <a href="#">HOME</a>
                 </li>
                 <li>
-                    <a href="#one">ABOUT</a>
+                    <a href="#about">ABOUT</a>
                 </li>
                 <li>
-                    <a href="#two">SKILL</a>
+                    <a href="#skill">SKILL</a>
                 </li>
                 <li>
-                    <a href="#four">PAINT</a>
+                    <a href="#paint">PAINT</a>
                 </li>
                 <li>
-                    <a href="#">CONTACT</a>
+                    <a href="#contact">CONTACT</a>
                 </li>
             </ul>
+        </div>
         </div>
         <div class="header-hello">
             <h1>Hello,I'm Shirley</h1>
@@ -39,8 +39,8 @@
         </div>
     </section>
 
-    <!-- One part-->
-    <section id="one" class="wrapper">
+    <!-- about -->
+    <section id="about" class="wrapper">
         <div data-delighter class="container">
             <div class="box head">
                 <img src="./images/header.png" alt="头像">
@@ -54,8 +54,8 @@
         </div>
     </section>
 
-    <!-- Two part-->
-    <section id="two" class="wrapper">
+    <!-- skill -->
+    <section id="skill" class="wrapper">
         <div>
             <h2>知识技能</h2>
             <ul class="skill-list">
@@ -90,10 +90,8 @@
         </div>
     </section>
 
-    <!-- three part-->
-
-    <!-- four part-->
-    <section id="four" class="wrapper">
+    <!-- paint -->
+    <section id="paint" class="wrapper">
         <h2>个人画册</h2>
         <div data-delighter class="box-wrapper">
             <div class="box">
@@ -137,24 +135,45 @@
                 </div>
             </div>
         </div>
-
     </section>
 
-    <script type="text/javascript" src="./js/delighters.js"></script> <!-- 动画 -->
+    <!-- contact -->
+    <section id="contact" class="wrapper">
+        <ul>
+            <li>
+                <h2>联系方式</h2>
+            </li>
+            <li>
+                <h4>手机</h4>
+                <p>139 1703 9301</p>
+            </li>
+            <li>
+                <h4>邮箱</h4>
+                <p>shirleytang93@foxmail.com</p>
+            </li>
+            <li>
+                <h4>github</h4>
+                <p>https://github.com/Shirley-Tang</p>
+            </li>
+        </ul>
+    </section>
 
+
+    <script type="text/javascript" src="./js/delighters.js"></script> <!-- 动画 -->
+    <script type="text/javascript" src="./js/jquery-1.11.0.min.js"></script>
     <script>
-    window.onscroll=function(){
-        var topScroll =document.body.scrollTop;//滚动的距离,距离顶部的距离
-        var bignav  = document.getElementById("nav");//获取到导航栏id
-        if(topScroll > 500){  //当滚动距离大于250px时执行下面的东西
-            bignav.style.position = 'fixed';
-            bignav.style.zIndex = '9999';
-            bignav.style.background = 'rgba(52,27,43,.3)'
-        }else{//当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状
-          bignav.style.position = 'absolute';
-          bignav.style.background = 'rgba(0,0,0,0)'
-        }
-    }
+        $(function(){
+            var nav = $('.nav');
+            var win = $(window);
+            var sc = $(document);
+            win.scroll(function(){
+                if(sc.scrollTop()>=400){
+                    nav.addClass("fixednav");
+                }else{
+                nav.removeClass("fixednav");
+                }
+            })
+        })
     </script>
 </body>
 </html>

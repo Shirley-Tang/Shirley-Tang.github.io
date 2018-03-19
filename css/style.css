@@ -37,40 +37,36 @@
     width: 35rem;
     text-align: center;
     background: rgba(52,27,43,.5);
-    padding:1rem 2.5rem;
+    padding: 2rem 6rem;
 }
 
 .header h1 {
-    font-size: 3rem;
+    font-size: 3.8rem;
     margin-bottom: 1rem;
     font-weight: bold;
 }
 .header p {
-    font-size: 1.6rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 4rem;
 }
-.nav {
-    position: absolute;
+.fixednav {
+    position: fixed;
     top: 0;
     right: 0;
+    z-index: 999;
+    background: rgba(52,27,43,.4);
+}
+.nav {
     font-size: 1.4rem;
+    float: right;
 }
 .nav ul{
-    margin: 2rem 3rem;
+    margin: 1rem 2rem;
     position: relative;
-}
-.nav ul:before{
-    content: " ";
-    position: absolute;
-    bottom: -1.2rem;
-    right: 0;
-    width: 100%;
-    height: 1px;
-    background: #fff;
 }
 .nav li{
     float: left;
-    margin: 0 1rem;
+    margin: 0 2rem;
 }
 .nav a{
     color: #fff;
@@ -79,22 +75,22 @@
     color: #333;
 }
 
-/*one*/
+/*about*/
 .wrapper {
-    padding: 10rem 2rem;
+    padding: 8rem 2rem;
     position: relative;
 }
-#one.wrapper {
+#about.wrapper {
     background-color: rgba(255,255,255,.8);
 }
-#one .container {
+#about .container {
     margin-left: auto;
     margin-right: auto;
     width: 65rem;
     max-width: 100%;
     display: flex;
 }
-#one .box {
+#about .box {
     justify-content: space-between;
     align-items: center;
     text-align: left;
@@ -103,6 +99,7 @@
     flex: 2.5;
     position: relative;
     padding: 0 3.5rem;
+    min-width: 200px;
 }
 
 .introduce h2 {
@@ -130,7 +127,7 @@
     line-height: 2.5rem;
 }
 
-#one .box img {
+#about .box img {
     width: 12rem;
     border: 8px rgba(52,27,43,.4) solid;
     transition: all .4s;
@@ -139,7 +136,7 @@
     cursor: pointer;
     margin-top: 1.5rem;
 }
-#one .box img:hover {
+#about .box img:hover {
     box-shadow: 0 0 10px #000;
 }
 .head {
@@ -148,16 +145,16 @@
 }
 
 
-/*two*/
-#two.wrapper{
+/*skill*/
+#skill.wrapper{
     background-color: rgba(52,27,43,.6);
     color: #fff;
 }
 
-#two h2 {
+#skill h2 {
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    margin-bottom: 4rem;
 }
 .skill-list {
     list-style: none;
@@ -169,20 +166,20 @@
 .skill-list li {
     text-decoration: none;
     width: 12rem;
-    margin: .8rem;
+    margin: 1.2rem;
     padding: .8rem;
     border: 1px #fff solid;
     border-radius: 20px;
 }
 
 .skill-list h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 2rem;
 }
 
 .skill-list p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 2rem;
 }
 
@@ -208,53 +205,53 @@
 }
 
 
-/*four*/
-#four.wrapper{
+/*paint*/
+#paint.wrapper{
     background-color: rgba(255,255,255,.7);
 }
-#four .box-wrapper{
+#paint .box-wrapper{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-#four h2 {
+#paint h2 {
     text-align: center;
     margin-bottom: 3rem;
     font-size: 2.2rem;
     color: rgb(52,27,43);
 }
-#four .box{
+#paint .box{
     overflow: hidden;
     position: relative;
-    width: 20rem;
-    height: 15rem;
+    width: 25rem;
+    height: 18rem;
     cursor: pointer;
-    margin: 1rem;
+    margin: 2rem;
 }
-#four .box:after{
+#paint .box:after{
     content: "";
     display: block;
-    border: 10px solid #333;
+    border: 6px solid #333;
     position: absolute;
-    top: 25px;
-    left: 25px;
-    bottom: 25px;
-    right: 25px;
+    top: 20px;
+    left: 20px;
+    bottom: 20px;
+    right: 20px;
     opacity: 1;
     z-index: 1;
     transition: all 0.3s ease 0s;
 }
-#four .box:hover:after{
+#paint .box:hover:after{
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
     opacity: 0;
 }
-#four .box:before{
+#paint .box:before{
     content: "";
     display: block;
-    border: 20px solid rgba(0,0,0,.3);
+    border: 15px solid rgba(0,0,0,.3);
     position: absolute;
     top: 5px;
     left: 5px;
@@ -264,20 +261,20 @@
     z-index: 2;
     transition: all 1s ease 0s;
 }
-#four .box:hover:before{
+#paint .box:hover:before{
     border: 1px solid rgba(0,0,0,.18);
 }
 
-#four .box img{
+#paint .box img{
     width: 100%;
     height: auto;
     transform: scale(1.1);
     transform: all 1s ease 0s;
 }
-#four .box:hover img{
+#paint .box:hover img{
     transform: scale(1);
 }
-#four .box-content{
+#paint .box-content{
     padding: 20px;
     text-align: center;
     color: #333;
@@ -290,13 +287,13 @@
     z-index: 2;
     transition: all 0.3s ease 0s;
 }
-#four .box:hover .box-content{
+#paint .box:hover .box-content{
     top: 6px;
     left: 6px;
     bottom: 6px;
     right: 6px;
 }
-#four .box .box-inner-content{
+#paint .box .box-inner-content{
     width: 100%;
     padding-bottom: 20px;
     opacity: 0;
@@ -305,51 +302,110 @@
     left: 0;
     transition: all 0.3s ease 0s;
 }
-#four .box:hover .box-inner-content{
+#paint .box:hover .box-inner-content{
     opacity: 1;
 }
-#four .box .title{
+#paint .box .title{
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
 }
-/*大屏幕*/
-@media screen and (min-width: 1170px){
+
+
+/*contact*/
+#contact.wrapper{
+    background-color: rgba(0,0,0,.7);
+    color: #fff;
+}
+
+#contact ul {
+    display: flex;
+    justify-content: center;
+}
+#contact li {
+    margin: 0 3rem;
+}
+#contact h4 {
+    margin-bottom: 1rem;
+}
+#contact p {
+    font-size: .9rem;
+}
+
+
+/*小屏幕*/
+@media screen and (max-width: 1440px){
     .header h1 {
-        font-size: 3.8rem;
+        font-size: 3rem;
     }
     .header p {
-        font-size: 2rem;
-        line-height: 4rem;
+        font-size: 1.6rem;
+        line-height: 3rem;
     }
     .header-hello {
-        padding: 2rem 6rem;
+        padding: 1rem 2.5rem;
     }
-    .nav ul{
+    #nav {
+        font-size: 1.2rem;
+    }
+    .nav li{
+        margin: 0 1rem;
+    }
+    #about .box img {
+        width: 10rem;
+        border: 6px rgba(52,27,43,.4) solid;
+        margin-top: 1.5rem;
+    }
+    .introduce h2 {
         font-size: 1.5rem;
-        position: relative;
     }
-    #two h2 {
-        font-size: 2.2rem;
-        margin-bottom: 4rem;
+    .introduce p {
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    #skill h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
     }
     .skill-list h3 {
-        font-size: 1.5rem;
-    }
-
-    .skill-list p {
         font-size: 1.2rem;
     }
 
-    .skill-list li {
-        margin: 1.2rem;
+    .skill-list p {
+        font-size: 1rem;
     }
-    #four .box{
-        width: 25rem;
-        height: 18rem;
-        margin: 2rem;
+
+    .skill-list li {
+        margin: .8rem;
+    }
+    #paint .box{
+        width: 20rem;
+        height: 15rem;
+        margin: 1rem;
+    }
+}
+
+/*手机屏幕*/
+@media screen and (max-width: 768px){
+    .wrapper {
+        padding: 2rem .5rem;
+    }
+    .header h1 {
+        font-size: 2rem;
+    }
+    .header-hello {
+        padding: 1rem 0;
+        background: rgba(52,27,43,0.5);
+    }
+    .header p {
+        font-size: 1.4rem;
     }
     .nav li{
-        margin: 0 2rem;
+        margin: 0 .4rem;
+        font-size: .8rem;
+    }
+    #about .container {
+        flex-wrap: wrap;
+        padding: 0;
     }
 }
