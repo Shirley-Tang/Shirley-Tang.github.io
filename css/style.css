@@ -84,24 +84,23 @@
     background-color: rgba(255,255,255,.8);
 }
 #about .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 65rem;
-    max-width: 100%;
     display: flex;
+    justify-content: center;
+    padding: 0 8rem;
 }
 #about .box {
-    justify-content: space-between;
-    align-items: center;
     text-align: left;
 }
 .introduce {
     flex: 2.5;
     position: relative;
     padding: 0 3.5rem;
-    min-width: 200px;
+    min-width: 350px;
 }
-
+.head {
+    width: 10rem;
+    flex: 1;
+}
 .introduce h2 {
     margin-bottom: 2.5rem;
     font-size: 1.8rem;
@@ -138,10 +137,6 @@
 }
 #about .box img:hover {
     box-shadow: 0 0 10px #000;
-}
-.head {
-    width: 10rem;
-    flex: 1;
 }
 
 
@@ -224,7 +219,7 @@
     overflow: hidden;
     position: relative;
     width: 25rem;
-    height: 18rem;
+    height: 17rem;
     cursor: pointer;
     margin: 2rem;
 }
@@ -323,7 +318,13 @@
     justify-content: center;
 }
 #contact li {
-    margin: 0 3rem;
+    margin: 0 .5rem;
+}
+.contact-s {
+    min-width: 160px;
+}
+.contact-l {
+    min-width: 240px;
 }
 #contact h4 {
     margin-bottom: 1rem;
@@ -383,6 +384,15 @@
         height: 15rem;
         margin: 1rem;
     }
+    #contact li {
+        margin: 0 .3rem;
+    }
+    #contact h4 {
+        margin-bottom: .8rem;
+    }
+    #contact p {
+        font-size: .8rem;
+    }
 }
 
 /*手机屏幕*/
@@ -396,6 +406,7 @@
     .header-hello {
         padding: 1rem 0;
         background: rgba(52,27,43,0.5);
+        width: 100%;
     }
     .header p {
         font-size: 1.4rem;
@@ -407,5 +418,36 @@
     #about .container {
         flex-wrap: wrap;
         padding: 0;
+    }
+    .skill-list {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .skill-list p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    #skill h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    #paint .box{
+        width: 15rem;
+        height: 10rem;
+        margin: .3rem;
+    }
+    #paint h2 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+    #contact ul {
+        justify-content: left;
+        flex-wrap: wrap;
+    }
+    #contact li {
+        margin: 1rem .2rem;
+    }
+    .contact-s {
+        min-width: 240px;
     }
 }
