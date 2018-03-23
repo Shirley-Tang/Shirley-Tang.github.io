@@ -1,0 +1,31 @@
+html,body,ul,ol,dl,dd,p,h1,h2,h3,h4,h5,h6,form,img {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+}
+ul,ol {
+    list-style: none;
+}
+img {
+    vertical-align: middle;
+}
+button {
+    cursor: pointer;
+}
+a {
+    text-decoration: none;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    display: block;
+    visibility: hidden;
+    clear: both;
+    height: 0;
+    content: ".";
+}
+.clearfix{
+    zoom: 1;
+}
