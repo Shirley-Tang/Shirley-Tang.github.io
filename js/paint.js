@@ -1,28 +1,31 @@
 // 个人画册页面的数据
 var data = [{
+    pics: './images/c10.jpg',
+    text: '18.3.31-马克笔',
+}, {
     pics: './images/c9.jpg',
-    text: '18.3.31',
+    text: '18.3.31-彩铅',
 }, {
     pics: './images/c8.jpg',
-    text: '18.3.27',
+    text: '18.3.27-马克笔',
 }, {
     pics: './images/c6.jpg',
-    text: '18.3.25',
+    text: '18.3.25-彩铅',
 }, {
     pics: './images/c7.jpg',
-    text: '18.3.24',
+    text: '18.3.24-彩铅',
 }, {
     pics: './images/c1.jpg',
-    text: '18.2.17',
+    text: '18.2.17-数码',
 }, {
     pics: './images/c4.jpg',
-    text: '14.5.5',
+    text: '14.5.5-数码',
 }, {
     pics: './images/c5.jpg',
-    text: '13.6.14',
+    text: '13.6.14-素描',
 }, {
     pics: './images/c3.jpg',
-    text: '13.5.4',
+    text: '13.5.4-素描',
 }];
 
 // 相关 DOM
