@@ -1,5 +1,11 @@
 // 个人画册页面的数据
 var data = [{
+    pics: './images/c9.jpg',
+    text: '18.3.31',
+}, {
+    pics: './images/c8.jpg',
+    text: '18.3.27',
+}, {
     pics: './images/c6.jpg',
     text: '18.3.25',
 }, {

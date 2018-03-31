@@ -1,6 +1,7 @@
 /*header*/
 .header {
     position: relative;
+    overflow: hidden;
 }
 .header-background{
     height: 100vh;
@@ -396,6 +397,10 @@
     .nav li{
         margin: 0 .4rem;
         font-size: .8rem;
+    }
+    .box.head img{
+        margin: 3rem auto;
+        display: block;
     }
     #about .container {
         flex-wrap: wrap;
