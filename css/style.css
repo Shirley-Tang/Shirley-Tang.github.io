@@ -19,18 +19,18 @@
     color: #fff;
     width: 35rem;
     text-align: center;
-    background: rgba(52,27,43,.5);
+    /*background: rgba(52,27,43,.5);*/
     padding: 2rem 6rem;
 }
 
 .header h1 {
     font-size: 3.8rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     font-weight: bold;
 }
 .header p {
     font-size: 2rem;
-    line-height: 4rem;
+    line-height: 5rem;
 }
 .fixednav {
     position: fixed;
@@ -66,23 +66,31 @@
 #about.wrapper {
     background-color: rgba(255,255,255,.8);
 }
-#about .container {
+/*#about .container {
     display: flex;
     justify-content: center;
     padding: 0 8rem;
 }
 #about .box {
     text-align: left;
+}*/
+#about h2,#about h3 {
+    color: #333;
+    text-align: center;
+    padding: .8rem 0;
 }
+#about h2 {
+    font-size: 1.8rem;
+    margin: 0 auto;
+    width: 100px;
+    border-bottom: 1px #333 solid;
+}
+
 .introduce {
     flex: 2.5;
     position: relative;
-    padding: 0 3.5rem;
+    padding: 0 20rem;
     min-width: 350px;
-}
-.head {
-    width: 10rem;
-    flex: 1;
 }
 .introduce h2 {
     margin-bottom: 2.5rem;
@@ -108,15 +116,18 @@
     font-size: 1.2rem;
     line-height: 2.5rem;
 }
-
+.head {
+    /*flex: 1;*/
+    text-align: center;
+}
 #about .box img {
-    width: 12rem;
+    width: 10rem;
     border: 8px rgba(52,27,43,.4) solid;
     transition: all .4s;
     -moz-transition: all .4s; /* Firefox 4 */
     -webkit-transition: all .4s; /* Safari 和 Chrome */
     cursor: pointer;
-    margin-top: 1.5rem;
+    margin: 1.5rem 0;
 }
 #about .box img:hover {
     box-shadow: 0 0 10px #000;
@@ -341,6 +352,9 @@
         border: 6px rgba(52,27,43,.4) solid;
         margin-top: 1.5rem;
     }
+    .introduce {
+        padding: 0 10rem;
+    }
     .introduce h2 {
         font-size: 1.5rem;
     }
@@ -399,13 +413,12 @@
         margin: 0 .4rem;
         font-size: .8rem;
     }
-    .box.head img{
-        margin: 3rem auto;
-        display: block;
-    }
     #about .container {
         flex-wrap: wrap;
         padding: 0;
+    }
+    .introduce {
+        padding: 0 5rem;
     }
     .skill-list {
         flex-wrap: wrap;

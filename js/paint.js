@@ -1,5 +1,11 @@
 // 个人画册页面的数据
 var data = [{
+    pics: './images/c15.jpg',
+    text: '18.5.20-马克笔',
+}, {
+    pics: './images/c14.jpg',
+    text: '18.4.22-彩铅',
+}, {
     pics: './images/c12.jpg',
     text: '18.4.14-铅笔',
 }, {
