@@ -419,16 +419,17 @@
     .header p {
         font-size: 1.4rem;
     }
-    .nav li{
-        margin: 0 .4rem;
-        font-size: .8rem;
+    .nav {
+        display: none;
     }
+
     #about .container {
         flex-wrap: wrap;
         padding: 0;
     }
     .introduce {
-        padding: 0 5rem;
+        padding: 0 1.5rem;
+        min-width: 100px;
     }
     #skill.wrapper,#contact.wrapper{
     background-color: rgba(0,0,0,.9);

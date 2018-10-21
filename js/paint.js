@@ -3,12 +3,6 @@ var data = [{
     pics: './images/c15.jpg',
     text: '18.5.20-马克笔',
 }, {
-    pics: './images/c14.jpg',
-    text: '18.4.22-彩铅',
-}, {
-    pics: './images/c11.jpg',
-    text: '18.4.6-马克笔',
-}, {
     pics: './images/c10.jpg',
     text: '18.3.31-马克笔',
 }, {
@@ -23,9 +17,6 @@ var data = [{
 }, {
     pics: './images/c4.jpg',
     text: '14.5.5-数码',
-}, {
-    pics: './images/c3.jpg',
-    text: '13.5.4-素描',
 }];
 
 // 相关 DOM
