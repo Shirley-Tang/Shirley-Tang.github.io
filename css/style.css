@@ -461,6 +461,7 @@
     }
     #contact li {
         margin: 1rem .2rem;
+        text-align: center;
     }
     .contact-s {
         min-width: 240px;
