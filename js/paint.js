@@ -6,9 +6,6 @@ var data = [{
     pics: './images/c14.jpg',
     text: '18.4.22-彩铅',
 }, {
-    pics: './images/c12.jpg',
-    text: '18.4.14-铅笔',
-}, {
     pics: './images/c11.jpg',
     text: '18.4.6-马克笔',
 }, {
@@ -20,12 +17,6 @@ var data = [{
 }, {
     pics: './images/c8.jpg',
     text: '18.3.27-马克笔',
-}, {
-    pics: './images/c6.jpg',
-    text: '18.3.25-彩铅',
-}, {
-    pics: './images/c7.jpg',
-    text: '18.3.24-彩铅',
 }, {
     pics: './images/c1.jpg',
     text: '18.2.17-数码',

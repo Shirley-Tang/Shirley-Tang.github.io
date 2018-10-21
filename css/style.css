@@ -14,22 +14,22 @@
 .header-hello {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%,-50%);
     color: #fff;
     width: 35rem;
-    text-align: center;
+    text-align: left;
     /*background: rgba(52,27,43,.5);*/
     padding: 2rem 6rem;
 }
 
 .header h1 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
     margin-bottom: 1.5rem;
     font-weight: bold;
 }
 .header p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     line-height: 5rem;
 }
 .fixednav {
@@ -37,7 +37,7 @@
     top: 0;
     right: 0;
     z-index: 999;
-    background: rgba(52,27,43,.4);
+    background: rgba(0,0,0,.5);
 }
 .nav {
     font-size: 1.4rem;
@@ -136,7 +136,7 @@
 
 /*skill*/
 #skill.wrapper{
-    background-color: rgba(52,27,43,.6);
+    background-color: rgba(0,0,0,.7);
     color: #fff;
 }
 
@@ -154,11 +154,17 @@
 
 .skill-list li {
     text-decoration: none;
-    width: 12rem;
-    margin: 1.2rem;
+    width: 15rem;
+    margin: 1.2rem 2rem;
     padding: .8rem;
     border: 1px #fff solid;
     border-radius: 20px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.skill-list li:hover {
+    box-shadow: 0 0 15px #fff;
 }
 
 .skill-list h3 {
@@ -170,6 +176,7 @@
 .skill-list p {
     font-size: 1.2rem;
     line-height: 2rem;
+    text-align: center;
 }
 
 /*delighter插件*/
@@ -340,6 +347,7 @@
     }
     .header-hello {
         padding: 1rem 2.5rem;
+        left: 40%;
     }
     #nav {
         font-size: 1.2rem;
@@ -403,8 +411,10 @@
     }
     .header-hello {
         padding: 1rem 0;
-        background: rgba(52,27,43,0.5);
+        background: rgba(0,0,0,0.9);
         width: 100%;
+        left: 50%;
+        text-align: center;
     }
     .header p {
         font-size: 1.4rem;
@@ -419,6 +429,9 @@
     }
     .introduce {
         padding: 0 5rem;
+    }
+    #skill.wrapper,#contact.wrapper{
+    background-color: rgba(0,0,0,.9);
     }
     .skill-list {
         flex-wrap: wrap;
